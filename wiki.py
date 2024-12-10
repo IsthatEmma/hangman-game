@@ -11,14 +11,14 @@ def hangman(word):
     attempts = 6  
     guessed_set = set() 
     
-    print("Welcome to Hangman!")
+    print("Welcome to Hangman!! :D")
     print(" ".join(guessed_letters))  
     while attempts > 0 and "_" in guessed_letters:
         guess = input("Guess a letter! :) ").lower()
 
      
         if len(guess) != 1 or not guess.isalpha():
-            print("Invalid input. Please guess a single letter.")
+            print("Please guess a single letter.")
             continue
         
        
@@ -45,12 +45,12 @@ def hangman(word):
     
    
     if "_" not in guessed_letters:
-        print("Congrats! You guessed the word yay! :) ", word)
+        print("Congrats! You guessed the word hoorayyy! :) ", word)
     else:
-        print("Game over! The correct was:", word)
+        print("Game over! :( The correct was:", word)
 
 
-words = ["Mr Marestaing", "Brawl Stars", "Amazing", "Heart", "Dancing"]
+words = ["Marestaing", "Brawl Stars", "Amazing", "Heart", "Dancing"]
 
 
 random_word = random.choice(words)
