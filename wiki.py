@@ -36,7 +36,7 @@ def hangman(word):
                 if letter == guess:
                     guessed_letters[i] = guess
         else:
-            print("No Sorry! :(")
+            print("No Sorry! Guess again :(")
             attempts -= 1  
         
       
@@ -50,7 +50,7 @@ def hangman(word):
         print("Game over! :( The correct was:", word)
 
 
-words = ["Marestaing", "Brawl Stars", "Amazing", "Heart", "Dancing"]
+words = ["marestaing", "brawl stars", "amazing", "heart", "dancing"]
 
 
 random_word = random.choice(words)
